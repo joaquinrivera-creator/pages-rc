@@ -1,24 +1,173 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Mi primera página</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Especialidad de Programación</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f2f4f8;
+            color: #222;
+        }
+
+        header {
+            background: #172554;
+            color: white;
+            text-align: center;
+            padding: 35px 15px;
+        }
+
+        nav {
+            background: #1e3a8a;
+            padding: 12px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 10px;
+            text-decoration: none;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        section {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+
+        .proyectos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+        }
+
+        .proyecto {
+            background: #eaf0ff;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        img {
+            width: 100%;
+            max-height: 240px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        a {
+            color: #1d4ed8;
+        }
+
+        footer {
+            background: #172554;
+            color: white;
+            text-align: center;
+            padding: 18px;
+        }
+
+        @media (max-width: 600px) {
+            nav a {
+                display: inline-block;
+                margin: 8px;
+            }
+
+            main {
+                padding: 12px;
+            }
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Mi primera página web</h1>
+    <header>
+        <h1>Especialidad de Programación</h1>
+        <p>Aprendiendo a crear soluciones con tecnología</p>
+    </header>
 
-    <h2>Especialidad de Programación</h2>
+    <nav>
+        <a href="#especialidad">Especialidad</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#proyectos">Proyectos</a>
+    </nav>
 
-    <p>En esta página presento lo que estoy aprendiendo
-    en la especialidad de Programación.</p>
+    <main>
+        <section id="especialidad">
+            <h2>¿De qué trata la especialidad?</h2>
+            <p>
+                La especialidad de Programación permite aprender a crear
+                páginas web, aplicaciones y sistemas informáticos.
+                También se trabaja con bases de datos y herramientas
+                para resolver problemas usando tecnología.
+            </p>
 
-    <h3>Habilidades que estoy aprendiendo</h3>
+            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1000&q=80"
+                 alt="Persona trabajando con tecnología">
+        </section>
 
-    <ul>
-        <li>Python</li>
-        <li>Desarrollo web</li>
-        <li>Bases de datos</li>
-        <li>Uso de Git y GitHub</li>
-    </ul>
+        <section id="habilidades">
+            <h2>Habilidades que se desarrollan</h2>
+            <ul>
+                <li>Programación con Python</li>
+                <li>Creación de páginas web con HTML y CSS</li>
+                <li>Manejo de bases de datos y SQL</li>
+                <li>Uso de Git y GitHub</li>
+                <li>Detección y solución de errores</li>
+            </ul>
+        </section>
+
+        <section id="proyectos">
+            <h2>Ejemplos de proyectos</h2>
+
+            <div class="proyectos">
+                <article class="proyecto">
+                    <h3>Página web</h3>
+                    <p>Un sitio web para presentar información de forma ordenada.</p>
+                </article>
+
+                <article class="proyecto">
+                    <h3>Juego en Python</h3>
+                    <p>Un juego sencillo con instrucciones, puntajes y controles.</p>
+                </article>
+
+                <article class="proyecto">
+                    <h3>Sistema de inventario</h3>
+                    <p>Una aplicación para registrar productos y controlar el stock.</p>
+                </article>
+            </div>
+
+            <h3>Imagen relacionada con programación</h3>
+            <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=1000&q=80"
+                 alt="Código de programación en una pantalla">
+        </section>
+
+        <section>
+            <h2>Repositorio del proyecto</h2>
+            <p>
+                En este enlace se puede revisar el repositorio donde
+                se guardan los archivos de esta página.
+            </p>
+            <a href="https://github.com/joaquinrivera-creator/pages-rc"
+               target="_blank">Ver repositorio en GitHub</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>Especialidad de Programación | Mi página web</p>
+    </footer>
 </body>
 </html>
